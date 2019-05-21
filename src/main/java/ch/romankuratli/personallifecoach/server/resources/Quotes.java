@@ -3,6 +3,7 @@ package ch.romankuratli.personallifecoach.server.resources;
 import ch.romankuratli.personallifecoach.server.MongoDbConnector;
 import com.mongodb.client.MongoCollection;
 import org.bson.Document;
+import org.bson.types.ObjectId;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import spark.Route;
@@ -10,6 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.logging.Logger;
+
+import static com.mongodb.client.model.Filters.eq;
 
 public class Quotes implements Resource {
     private final static Logger LOGGER = Logger.getLogger(Quotes.class.getName());
@@ -30,7 +33,7 @@ public class Quotes implements Resource {
 
     @Override
     public Resource[] getSubResources() {
-        return new Resource[]{new RandomQuote()};
+        return new Resource[]{new RandomQuote(), new QuoteById()};
     }
 
     @Override
@@ -55,6 +58,21 @@ public class Quotes implements Resource {
             QUOTES_COL.insertOne(doc);
             return doc;
         };
+    }
+
+    static class QuoteById implements Resource {
+        @Override
+        public String getSubPath() {
+            return "/:id";
+        }
+
+        @Override
+        public Route handleDelete() {
+            return (req, res) -> {
+                QUOTES_COL.deleteOne(eq("_id", new ObjectId("57506d62f57802807471dd41")));
+                return "{\"msg\": \"ok\"}";
+            };
+        }
     }
 
     static class RandomQuote implements Resource {

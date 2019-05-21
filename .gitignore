@@ -1,2 +1,6 @@
 /.idea/*
 .idea/workspace.xml
+.idea/workspace.xml
+/target/*
+target/classes/ch/romankuratli/personallifecoach/server/resources/Quotes$RandomQuote.class
+*.class
