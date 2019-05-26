@@ -1,7 +1,6 @@
 package ch.romankuratli.personallifecoach.server;
-import ch.romankuratli.personallifecoach.server.resources.Quotes;
-import ch.romankuratli.personallifecoach.server.resources.Resource;
-import ch.romankuratli.personallifecoach.server.resources.RootResource;
+import ch.romankuratli.personallifecoach.server.rest_resources.RESTResource;
+import ch.romankuratli.personallifecoach.server.rest_resources.RootResource;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,6 +9,7 @@ import java.util.logging.Logger;
 import static spark.Spark.*;
 
 import ch.romankuratli.personallifecoach.server.utils.NotImplementedRoute;
+import org.apache.velocity.app.Velocity;
 import spark.Route;
 
 /**
@@ -22,7 +22,7 @@ public class App
     private final static int PORT = 4567;
     private final static Logger LOGGER = Logger.getLogger(App.class.getName());
 
-    private static void recursiveSetupResource(Resource resource, String parentPath, List<String> availableRoutes) {
+    private static void recursiveSetupResource(RESTResource resource, String parentPath, List<String> availableRoutes) {
         String path = parentPath + resource.getSubPath();
 
         Route route = resource.handleGet();
@@ -43,7 +43,7 @@ public class App
             delete(path, route);
         }
 
-        for(Resource subResource : resource.getSubResources()) {
+        for(RESTResource subResource : resource.getSubResources()) {
             recursiveSetupResource(subResource, path, availableRoutes);
         }
     }
@@ -80,7 +80,11 @@ public class App
                 return "";
             });
 
-            before((req, res) -> {
+            // initialize Velocity Template Engine
+            Velocity.init();
+            LOGGER.info("Velocity Template Path: " + Velocity.getProperty("file.resource.loader.path").toString());
+
+            before("/rest/*", (req, res) -> { // not for /rest itself which returns html
                 res.header("Access-Control-Allow-Origin", "http://localhost:4200");
                 res.type("application/json");
             });

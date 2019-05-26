@@ -1,4 +1,4 @@
-package ch.romankuratli.personallifecoach.server.resources;
+package ch.romankuratli.personallifecoach.server.rest_resources;
 
 import ch.romankuratli.personallifecoach.server.MongoDbConnector;
 import com.mongodb.client.MongoCollection;
@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 
 import static com.mongodb.client.model.Filters.eq;
 
-public class Quotes implements Resource {
+public class Quotes implements RESTResource {
     private final static Logger LOGGER = Logger.getLogger(Quotes.class.getName());
     private final static MongoCollection<Document> QUOTES_COL = MongoDbConnector.getCollection("quotes");
 
@@ -32,8 +32,8 @@ public class Quotes implements Resource {
     }
 
     @Override
-    public Resource[] getSubResources() {
-        return new Resource[]{new RandomQuote(), new QuoteById()};
+    public RESTResource[] getSubResources() {
+        return new RESTResource[]{new RandomQuote(), new QuoteById()};
     }
 
     @Override
@@ -60,7 +60,7 @@ public class Quotes implements Resource {
         };
     }
 
-    static class QuoteById implements Resource {
+    static class QuoteById implements RESTResource {
         @Override
         public String getSubPath() {
             return "/:id";
@@ -75,7 +75,7 @@ public class Quotes implements Resource {
         }
     }
 
-    static class RandomQuote implements Resource {
+    static class RandomQuote implements RESTResource {
         private static final Random RAND = new Random();
         @Override
         public String getSubPath() {

@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08399222-1fe5-4cf1-ada4-35a7760d1966" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/utils/PathNotImplementedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/templates/welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/utils/VelocityUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalLifeCoachServer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/utils/NotImplementedRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/utils/NotImplementedRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/resources/Quotes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/rest_resources/Quotes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/resources/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/rest_resources/RESTResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/resources/RootResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/rest_resources/RootResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ch/romankuratli/personallifecoach/server/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/romankuratli/personallifecoach/server/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ch/romankuratli/personallifecoach/server/MongoDbConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/romankuratli/personallifecoach/server/MongoDbConnector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/romankuratli/personallifecoach/server/resources/Quotes$RandomQuote.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/romankuratli/personallifecoach/server/resources/Quotes$RandomQuote.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/romankuratli/personallifecoach/server/resources/Quotes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/romankuratli/personallifecoach/server/resources/Quotes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/romankuratli/personallifecoach/server/resources/Quotes$RandomQuote.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/romankuratli/personallifecoach/server/resources/Quotes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/romankuratli/personallifecoach/server/resources/Resource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/romankuratli/personallifecoach/server/resources/RootResource.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ch/romankuratli/personallifecoach/server/utils/NotImplementedRoute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/romankuratli/personallifecoach/server/utils/NotImplementedRoute.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,41 +31,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="820">
-              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="8" selection-start-column="8" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="46" column="69" selection-start-line="46" selection-start-column="69" selection-end-line="46" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="395">
+              <caret line="86" column="88" selection-start-line="86" selection-start-column="88" selection-end-line="86" selection-end-column="88" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/resources/RootResource.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/rest_resources/RootResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+            <state relative-caret-position="439">
+              <caret line="39" column="82" selection-start-line="39" selection-start-column="82" selection-end-line="39" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,7 +53,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/resources/Quotes.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/sparkjava/spark-template-velocity/2.7.1/spark-template-velocity-2.7.1.jar!/spark/template/velocity/VelocityTemplateEngine.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1000">
+              <caret line="50" column="34" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/utils/VelocityUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/templates/welcome.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/rest_resources/Quotes.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="740">
               <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
@@ -81,18 +95,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/resources/Resource.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/rest_resources/RESTResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="19" />
+            <state relative-caret-position="100">
+              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/utils/NotImplementedRoute.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="200">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -127,6 +144,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -140,13 +158,18 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/MongoDbConnector.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/resources/Resource.java" />
         <option value="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/resources/RootResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/resources/Quotes.java" />
         <option value="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/utils/PathNotImplementedException.java" />
         <option value="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/utils/NotImplementedRoute.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/rest_resources/Resource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/rest_resources/RESTResource.java" />
+        <option value="$PROJECT_DIR$/resources/templates/welcome.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/utils/VelocityUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/rest_resources/RootResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/App.java" />
       </list>
     </option>
   </component>
@@ -223,6 +246,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -275,8 +299,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15671642" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15991472" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -310,8 +335,8 @@
     <entry file="jar://$MAVEN_REPOSITORY$/com/sparkjava/spark-core/2.5/spark-core-2.5.jar!/spark/Route.class" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        <state relative-caret-position="1880">
+          <caret line="94" column="6" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -322,27 +347,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="46" column="69" selection-start-line="46" selection-start-column="69" selection-end-line="46" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/resources/RootResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/resources/Quotes.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/rest_resources/Quotes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="740">
           <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
@@ -352,10 +357,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/resources/Resource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/utils/NotImplementedRoute.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="19" />
+        <state relative-caret-position="200">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -376,13 +384,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/utils/NotImplementedRoute.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/rest_resources/RESTResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="100">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sparkjava/spark-template-velocity/2.7.1/spark-template-velocity-2.7.1.jar!/spark/template/velocity/VelocityTemplateEngine.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="50" column="34" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/utils/VelocityUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/rest_resources/RootResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="39" column="82" selection-start-line="39" selection-start-column="82" selection-end-line="39" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/romankuratli/personallifecoach/server/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="86" column="88" selection-start-line="86" selection-start-column="88" selection-end-line="86" selection-end-column="88" />
         </state>
       </provider>
     </entry>
