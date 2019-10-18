@@ -4,3 +4,5 @@
 /target/*
 target/classes/ch/romankuratli/personallifecoach/server/resources/Quotes$RandomQuote.class
 *.class
+target/classes/ch/romankuratli/personallifecoach/server/MongoDbConnector.class
+target/classes/ch/romankuratli/personallifecoach/server/MongoDbConnector.class

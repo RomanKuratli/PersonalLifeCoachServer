@@ -1,7 +1,6 @@
 package ch.romankuratli.personallifecoach.server.rest_resources;
 
 import ch.romankuratli.personallifecoach.server.utils.VelocityUtil;
-import spark.ModelAndView;
 import spark.Route;
 import spark.TemplateEngine;
 import spark.template.velocity.VelocityTemplateEngine;
@@ -28,7 +27,7 @@ public class RootResource implements RESTResource {
 
     @Override
     public RESTResource[] getSubResources() {
-        return new RESTResource[]{new Quotes()};
+        return new RESTResource[]{new Quotes(), new Diary()};
     }
 
     @Override

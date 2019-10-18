@@ -1,11 +1,10 @@
 package ch.romankuratli.personallifecoach.server.rest_resources;
 
 import ch.romankuratli.personallifecoach.server.MongoDbConnector;
+import ch.romankuratli.personallifecoach.server.utils.Utils;
 import com.mongodb.client.MongoCollection;
 import org.bson.Document;
 import org.bson.types.ObjectId;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import spark.Route;
 import java.util.ArrayList;
 import java.util.List;
@@ -50,9 +49,7 @@ public class Quotes implements RESTResource {
     @Override
     public Route handlePost() {
         return (req, res) -> {
-            JSONParser jsonParser = new JSONParser();
-            JSONObject jsonObj = (JSONObject) jsonParser.parse(req.body());
-            Document doc = new Document(jsonObj);
+            Document doc = Utils.getBodyJsonDoc(req);
             // add the index value 'quote hash'
             doc.put("quote_hash", doc.get("quote").hashCode());
             QUOTES_COL.insertOne(doc);
@@ -69,7 +66,7 @@ public class Quotes implements RESTResource {
         @Override
         public Route handleDelete() {
             return (req, res) -> {
-                QUOTES_COL.deleteOne(eq("_id", new ObjectId("57506d62f57802807471dd41")));
+                QUOTES_COL.deleteOne(eq("_id", new ObjectId(req.params("id"))));
                 return "{\"msg\": \"ok\"}";
             };
         }

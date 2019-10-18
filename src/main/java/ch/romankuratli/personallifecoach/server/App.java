@@ -12,10 +12,6 @@ import ch.romankuratli.personallifecoach.server.utils.NotImplementedRoute;
 import org.apache.velocity.app.Velocity;
 import spark.Route;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public final static String URL_ROOT = "/rest";
@@ -55,7 +51,6 @@ public class App
         root.setAvailableRoutes(availableRoutes);
     }
 
-
     public static void main( String[] args )
     {
         try {
@@ -64,6 +59,9 @@ public class App
 
             // connect to MongoDB
             MongoDbConnector.connect();
+
+            //set static files
+            staticFiles.location("/resources");
 
             // CORS
             options("/*", (req, res) -> {
